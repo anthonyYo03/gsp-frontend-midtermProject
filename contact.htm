@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body class="pagebackgroundandfont">
+    <header>
+      <!-- Header section of the webpage -->
+      <nav class="navbar">
+        <!-- Navigation bar -->
+        <img src="images/logo.png" class="logostyle" alt="Logo" />
+        <!-- Logo image -->
+        <ul class="navlist">
+          <!-- Unordered list for navigation links -->
+          <li><a href="index.htm">Index</a></li>
+          <!-- Link to the homepage -->
+          <li><a href="about.htm">About</a></li>
+          <!-- Link to the About page -->
+          <li><a href="gallery.htm">Gallery</a></li>
+          <!-- Link to the Gallery page -->
+          <li><a href="contact.htm">Contact Us</a></li>
+          <!-- Link to the Contact Us page -->
+          <li><a href="practice.htm">Practice Info</a></li>
+          <!-- Link to the Practice Information page -->
+        </ul>
+      </nav>
+    </header>
+
+    <main class="contact-main">
+      <section class="contact-section">
+        <h1>Contact Information</h1>
+        <!-- Heading for the contact information -->
+
+        <form action="/submit-contact" method="POST" class="contact-form">
+          <!-- Contact form for users to submit their information -->
+
+          <div class="form-group">
+            <label for="first-name">First Name:</label>
+            <!-- Name of the label -->
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              class="inputInContact"
+              required
+            />
+            <!-- Input for first name -->
+          </div>
+
+          <div class="form-group">
+            <label for="last-name">Last Name:</label
+            ><!-- Name of the label -->
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              class="inputInContact"
+              required
+            />
+            <!-- Input for last name -->
+          </div>
+
+          <div class="form-group">
+            <label for="gender">Gender:</label
+            ><!-- Name of the label -->
+            <div class="gender-options">
+              <!-- Radio buttons for gender selection -->
+              <label>
+                <input
+                  type="radio"
+                  name="gender"
+                  value="Male"
+                  class="large-radio"
+                  required
+                />
+                Male
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="gender"
+                  value="Female"
+                  class="large-radio"
+                  required
+                />
+                Female
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="gender"
+                  value="Others"
+                  class="large-radio"
+                  required
+                />
+                Others
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="nationality">Nationality:</label
+            ><!-- Name of the label -->
+            <input
+              type="text"
+              id="nationality"
+              name="nationality"
+              class="inputInContact"
+              required
+            />
+            <!-- Input for nationality -->
+          </div>
+
+          <div class="form-group">
+            <label for="address">Address:</label
+            ><!-- Name of the label -->
+            <input
+              type="text"
+              id="address"
+              name="address"
+              class="inputInContact"
+              required
+            />
+            <!-- Input for address -->
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address:</label
+            ><!-- Name of the label -->
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="inputInContact"
+              required
+            />
+            <!-- Input for email address -->
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number:</label
+            ><!-- Name of the label -->
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              class="inputInContact"
+              required
+            />
+            <!-- Input for phone number -->
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message:</label
+            ><!-- Name of the label -->
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              class="inputInContact"
+              required
+            ></textarea>
+            <!-- Textarea for user message -->
+          </div>
+
+          <button type="submit" class="submit-button">Submit</button>
+          <!-- Submit button for the form -->
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <!-- Footer section of the webpage -->
+      <div class="contact-infooter">
+        <!-- Container for contact information -->
+        <p><strong>Address:</strong> 456 Elm Street, Springfield, IL, USA</p>
+        <!-- Address information -->
+        <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+        <!-- Phone number information -->
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:GSP@gmail.com" class="emailhover">GSP@gmail.com</a>
+          <!-- Email link-->
+        </p>
+      </div>
+      <p>&copy; 2024 GSP. All rights reserved.</p>
+      <!-- Copyright notice -->
+    </footer>
+  </body>
+</html>

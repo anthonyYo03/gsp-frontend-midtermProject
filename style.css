@@ -1,0 +1,580 @@
+body {
+  margin-bottom: 0px;
+}
+
+/* Sets the font and background for the entire page */
+.pagebackgroundandfont {
+  font-family: Arial, sans-serif;
+  background-color: #87a2b5;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+.navbar {
+  position: relative; /* Makes the navbar the positioning context for absolute elements */
+  display: flex; /* Enables flexbox for the navbar content */
+  justify-content: center; /* Centers the navigation links */
+  align-items: center; /* Aligns items vertically */
+  padding: 10px 20px; /* Adds padding */
+  background-color: #2f4f7f; /* Example background color */
+  min-height: 60px;
+  gap: 20px;
+}
+.navbar li a {
+  padding: 10px;
+}
+.navbar li a:hover {
+  background-color: #000000;
+}
+.navbar li a:active {
+  background-color: #808080;
+}
+
+/* Logo Styling */
+.logostyle {
+  position: absolute; /* Positions the logo independently */
+  height: auto;
+  width: 70px;
+  left: 20px; /* Aligns the logo to the left */
+  top: 50%; /* Vertically centers the logo */
+  margin: 0;
+  transform: translateY(
+    -50%
+  ); /* Corrects the vertical centering due to logo's height */
+}
+
+.navlist {
+  list-style-type: none; /* Removes bullet points */
+  display: flex; /* Displays list items horizontally */
+  gap: 20px; /* Adds spacing between list items */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+}
+
+.navlist li {
+  margin: 0; /* Ensures consistent spacing */
+}
+
+.navlist a {
+  text-decoration: none; /* Removes underline */
+  color: #ffffff; /* Example text color */
+  font-weight: bold; /* Makes text bold */
+}
+
+/* Styling for introduction section */
+.gsp-introduction {
+  position: relative; /* Makes the container a positioning context */
+  margin-top: 10px;
+  border: 10px solid #000000;
+  font-family: Arial, sans-serif;
+  text-align: center; /* Centers text within this section */
+  color: #ffffff;
+  font-size: 25px;
+  background-image: url("images/pictureinindex.jpg");
+  background-position: center; /* Centers the background image */
+  background-size: cover; /* Makes the image cover the entire section */
+  overflow: hidden; /* Ensures the overlay stays within bounds */
+}
+
+.gsp-introduction::before {
+  content: "";
+  position: absolute; /* Ensures the overlay covers the entire section */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adds a semi-transparent black overlay */
+  z-index: 1; /* Places the overlay behind the text */
+}
+
+.gsp-introduction div {
+  position: relative; /* Keeps text above the overlay */
+  z-index: 2;
+}
+
+/* Contact form styling */
+.contact-main {
+  display: flex; /* Centers the form horizontally */
+  justify-content: center;
+  align-items: center;
+  padding-left: 0rem;
+  padding-top: 2rem;
+  width: 100%;
+}
+
+.contact-section {
+  width: 90%;
+  max-width: 600px; /* Limits form section width */
+  background-color: #ffffff;
+  padding: 25px; /* Adds space inside the form */
+  border-radius: 8px; /* Makes corners round */
+}
+
+.contact-section h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #2f4f7f; /* Dark blue header color */
+}
+
+.contact-form {
+  text-align: center; /* Centers content in the form */
+}
+
+.contact-form .form-group {
+  margin-bottom: 15px; /* Adds space between each input group */
+}
+
+.contact-form label {
+  display: block; /* Makes labels take up full line */
+  font-weight: bold; /* Bold text */
+  margin-bottom: 5px;
+  color: #2f4f7f;
+}
+
+/* Gender options styling */
+.gender-options {
+  display: flex; /* Aligns options in a row */
+  justify-content: center;
+  gap: 10px; /* Adds space between options */
+  align-items: center; /* Vertically centers options */
+}
+
+/* Styling for submit button */
+.submit-button {
+  display: block;
+  width: 100%; /* Makes button full width of the form */
+  padding: 12px;
+  background-color: #2f4f7f; /* Dark blue background */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none; /* Removes border */
+  border-radius: 5px; /* Rounds button corners */
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.submit-button:hover {
+  background-color: #555; /* Changes color on hover */
+}
+
+/* Footer styling */
+footer {
+  text-align: center; /* Centers footer text */
+  padding: 20px;
+  background-color: #2f4f7f;
+  color: white;
+  margin-top: 20px; /* Adds space above footer */
+  font-family: Arial, sans-serif;
+}
+
+/* Gallery section styling */
+.galleysection {
+  margin: 100px; /* Adds space around the gallery */
+}
+
+/* Picture in the About section */
+.picInAbout {
+  /* Picture GSP */
+  width: 30%; /* Sets width of the picture */
+  height: 75vh; /* Sets height to 90% of the viewport */
+  border: 5px solid black; /* Adds black border */
+}
+
+/* Contact information in footer */
+.contact-infooter {
+  display: flex; /* Aligns items in a row */
+  justify-content: center;
+  gap: 15px; /* Adds space between items */
+}
+
+/* Email link styling when hovering */
+.emailhover {
+  color: #ffffff; /* White color for email links */
+  text-decoration: none; /* No underline */
+}
+
+/* Table styling */
+.alltables {
+  border-collapse: collapse; /* Combines table borders into single lines */
+  width: 100%; /* Table takes up full width */
+  font-size: 15px; /* Sets small font size */
+}
+.alltables,
+th,
+td {
+  border: 2px solid black; /* Black border around table, headers, and cells */
+  padding: 9px; /* Adds space inside cells */
+  text-align: center; /* Centers text within cells */
+}
+
+/* Highlights table section with gray background when clicked */
+#football:target {
+  background-color: #808080;
+}
+#basketball:target {
+  background-color: #808080;
+}
+#tennis:target {
+  background-color: #808080;
+}
+#rugby:target {
+  background-color: #808080;
+}
+.h3background {
+  background-color: #2f4f7f;
+}
+
+.emailhover:hover {
+  color: #000000; /*The email color turns black when hovering on it*/
+}
+
+.gsp_image_section_about {
+  text-align: center; /*Aligns the picture in the middle */
+  margin-top: 10px;
+}
+
+.galleysection {
+  margin: 100px;
+}
+
+.galleysection .content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Default settings for images */
+.galleysection .picsingallery {
+  max-width: 100%;
+  height: auto;
+  flex: 1; /* Image takes 1 part of the flex */
+}
+
+/* Text content styling */
+.galleysection .text-content {
+  margin-left: 20px;
+  flex: 2; /* Text content takes 2 parts of the flex */
+}
+
+.galleysection .text-content h3 {
+  margin-top: 0;
+}
+
+.galleysection .text-content p {
+  margin-bottom: 20px;
+}
+
+.galleysection .text-content a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+.galleysection .text-content a:hover {
+  color: #23527c;
+}
+
+/* Responsive */
+
+/* Styles for Mobile Devices (up to 767px) */
+@media (max-width: 767px) {
+  .navbar {
+    position: relative; /* Makes the navbar the positioning context for absolute elements */
+    display: flex; /* Enables flexbox for the navbar content */
+    justify-content: center; /* Centers the navigation links */
+    align-items: center; /* Aligns items vertically */
+    padding: 0.625rem 1.25rem;
+    background-color: #2f4f7f;
+    min-height: 70px;
+    gap: 20px;
+  }
+
+  .navlist {
+    list-style-type: none; /* Removes bullet points */
+    display: block; /* Displays list items vertically */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    margin-left: 0.1rem; /* Adds slight left margin */
+  }
+
+  .navlist li {
+    margin-bottom: 15px; /* Adds space between navigation items */
+  }
+
+  .navlist li:last-child {
+    margin-bottom: 0; /* Removes bottom margin for the last item */
+  }
+
+  .logostyle {
+    position: absolute; /* Positions the logo relative to the navbar */
+    left: 0rem;
+    top: 30%; /* Vertically positions the logo */
+    transform: translateY(
+      -50%
+    ); /* Centers the logo vertically within its container */
+    width: 30%;
+  }
+
+  footer {
+    text-align: center; /* Centers footer text */
+    padding: 1.5rem;
+    font-size: 1rem;
+    background-color: #2f4f7f;
+    color: white;
+    margin-top: 2rem; /* Adds space above the footer */
+    font-family: Arial, sans-serif;
+  }
+
+  .contact-infooter {
+    display: block; /* Stacks contact info vertically */
+  }
+
+  .picInAbout {
+    width: 80%;
+    height: 45vh;
+    border: 0.3125rem solid black;
+  }
+
+  .galleysection {
+    margin: 6.25rem;
+    display: grid; /* Change display to grid */
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(200px, 1fr)
+    ); /* Adjust the number of columns */
+    gap: 1.25rem; /* Optional: Adds space between grid items */
+  }
+
+  .picsingallery {
+    width: 100%; /* Makes the gallery image responsive */
+  }
+
+  .alltables {
+    display: block; /* Enables block layout for responsive tables */
+    width: 100%;
+    overflow-x: auto; /* Adds horizontal scrolling for wide tables */
+    white-space: nowrap; /* Prevents table content from wrapping */
+    border-collapse: collapse; /* Combines table borders */
+    font-size: 1.2rem;
+  }
+
+  .alltables th,
+  .alltables td {
+    padding: 0.625rem;
+    text-align: center; /* Centers text inside cells */
+  }
+
+  .alltables th {
+    background-color: #2f4f7f;
+    color: white;
+  }
+
+  .alltables tr {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .h3background {
+    font-size: 1.75rem; /*font size for h3 headers */
+  }
+}
+
+/* Styles for Tablets (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .logostyle {
+    position: absolute; /* Positions the logo relative to the navbar */
+    left: -1rem;
+    top: 46%;
+    transform: translateY(-50%); /* Centers the logo vertically */
+    width: 20%;
+  }
+
+  .navbar {
+    position: relative; /* Makes the navbar the positioning context for absolute elements */
+    display: flex; /* Enables flexbox for the navbar content */
+    justify-content: center; /* Centers the navigation links */
+    align-items: center; /* Aligns items vertically */
+    padding: 2.625rem 1.25rem;
+    background-color: #2f4f7f;
+    min-height: 70px;
+    gap: 20px;
+  }
+
+  .navlist {
+    list-style-type: none; /* Removes bullet points */
+    display: flex; /* Displays list items horizontally */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    margin-left: 7.1rem; /* Adds left margin */
+    font-size: 1.4rem;
+  }
+
+  .navlist li {
+    margin-bottom: 15px; /* Adds space between navigation items */
+  }
+
+  .navlist li:last-child {
+    margin-bottom: 0; /* Removes bottom margin for the last item */
+  }
+
+  .picInAbout {
+    width: 80%;
+    height: 60vh;
+    border: 5px solid black;
+  }
+
+  .gsp-introduction {
+    position: relative; /* Positions the introduction section */
+    margin-top: 1.25rem; /* Adds space above the section */
+    border: 10px solid #000000;
+    font-family: Arial, sans-serif; /* Ensures consistent font */
+    text-align: center; /* Centers text inside the section */
+    color: #ffffff;
+    font-size: 2.65rem; /* Adjusts font size for better visibility */
+    background-image: url(images/pictureinindex.jpg); /* Adds a background image */
+    background-position: center; /* Centers the background image */
+    background-size: cover; /* Makes the image cover the entire section */
+    overflow: hidden; /* Hides overflow content */
+    height: 100vh;
+  }
+
+  .contact-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .pagebackgroundandfont,
+  .contact-main,
+  .contact-section,
+  .form-group,
+  .gender-options,
+  .submit-button,
+  .inputInContact {
+    font-size: 2rem; /* Adjusts font size*/
+  }
+
+  .large-radio {
+    transform: scale(1.6); /* Enlarges radio buttons */
+    margin-right: 0.625rem; /* Adds space between radio buttons and labels */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+  }
+
+  /* Updated styling for gallery sections with grid layout */
+  .galleysection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px;
+  }
+
+  /* Content Wrapper in Gallery Section */
+  .galleysection .content-wrapper {
+    display: grid;
+    grid-template-rows: auto auto; /* Image and text stack */
+    gap: 15px;
+    text-align: center;
+    padding: 10px;
+    background: rgba(
+      0,
+      0,
+      0,
+      0.8
+    ); /* Optional background for better visibility */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Gallery Images */
+  .galleysection .picsingallery {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Responsive Text in Gallery Section */
+  .galleysection h3 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  .galleysection p {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
+  /* Media Queries for further responsiveness */
+
+  /* Styles for Mobile Devices (up to 767px) */
+  @media (max-width: 767px) {
+    .galleysection {
+      grid-template-columns: 1fr; /* Single column layout on small screens */
+      gap: 15px;
+    }
+
+    .galleysection .picsingallery {
+      width: 100%;
+    }
+  }
+
+  /* Styles for Tablets (768px to 1023px) */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .galleysection {
+      grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+    }
+  }
+
+  .picsingallery {
+    width: 100%;
+  }
+
+  .galleysection .content-wrapper {
+    flex-direction: row; /* Arranges gallery items in two columns */
+  }
+
+  .galleysection .picsingallery {
+    max-width: 100%;
+    flex: 1; /* Ensures equal flex for gallery images */
+  }
+
+  .galleysection .text-content {
+    margin-left: 20px;
+    flex: 1; /* Ensures equal flex for text content */
+  }
+
+  .alltables {
+    display: block; /* Enables block layout for responsive tables */
+    width: 100%;
+    overflow-x: auto; /* Adds horizontal scrolling for wide tables */
+    white-space: nowrap; /* Prevents table content from wrapping */
+    border-collapse: collapse; /* Combines table borders */
+    font-size: 2.5rem;
+  }
+
+  .alltables th,
+  .alltables td {
+    padding: 0.625rem; /* Adds space inside table cells */
+    text-align: center; /* Centers text inside cells */
+  }
+
+  .alltables th {
+    background-color: #2f4f7f;
+    color: white;
+  }
+
+  .alltables tr {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .h3background {
+    font-size: 2.5rem; /* Adjusts font size for h3 headers */
+  }
+
+  .designforesponsive {
+    color: #ffffff; /* Changes the link color to white*/
+  }
+}
